@@ -2,17 +2,30 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AlienFlowSpace DAO</title>
-  <!-- Usa esta URL actualizada de ethers.js -->
-  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <!-- Tus fuentes oficiales -->
+  <link href="https://fonts.googleapis.com/css2?family=Atomic+Age&family=Exo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="app">
-    <h1>🚀 AlienFlowSpace DAO</h1>
-    <p id="wallet-status">Conectando Web3...</p>
+  <!-- Banner con efecto parallax -->
+  <div class="parallax-banner"></div>
+
+  <!-- Header con logo -->
+  <header>
+    <img src="logo.png" class="logo" alt="AlienFlowSpace Logo">
+    <button id="connectBtn" class="btn-gold">Conectar Wallet</button>
+  </header>
+
+  <!-- Efecto estrellas -->
+  <div id="stars"></div>
+
+  <!-- Texto estilo Star Wars -->
+  <div class="starwars-text">
+    <h1>ALIENFLOWSPACE</h1>
+    <p>Conectando el futuro descentralizado...</p>
   </div>
-  <!-- Cambia la ruta del script -->
-  <script src="src/index.js"></script>
+
+  <script src="effects.js"></script>
 </body>
 </html>
