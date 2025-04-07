@@ -1,0 +1,61 @@
+/* Variables de color */
+:root {
+  --alien-green: #00af69;
+  --alien-gold: #d4af37;
+  --space-dark: #0a0a20;
+}
+
+/* Fuentes oficiales */
+body {
+  font-family: 'Exo', sans-serif;
+  background: var(--space-dark);
+  color: white;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Banner con efecto parallax */
+.parallax-banner {
+  background: url('banner.jpg') center/cover fixed;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+  opacity: 0.8;
+}
+
+/* Logo */
+.logo {
+  height: 60px;
+  margin: 20px;
+}
+
+/* Botón dorado con rebote */
+.btn-gold {
+  background: var(--alien-gold);
+  color: var(--space-dark);
+  font-family: 'Atomic Age', cursive;
+  font-size: 1.2rem;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50px;
+  margin: 20px;
+  cursor: pointer;
+  animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+
+/* Texto Star Wars */
+.starwars-text {
+  font-family: 'Atomic Age', cursive;
+  color: var(--alien-gold);
+  text-align: center;
+  margin-top: 50vh;
+  transform: perspective(300px) rotateX(20deg);
+}
