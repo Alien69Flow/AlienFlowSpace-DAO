@@ -134,3 +134,17 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+# Dependencias
+node_modules/
+
+# Variables de entorno
+.env
+.env.local
+
+# Builds
+dist/
+build/
+coverage/
+
+# Logs
+*.log
