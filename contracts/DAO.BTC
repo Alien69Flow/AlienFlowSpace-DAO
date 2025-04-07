@@ -1,1 +1,21 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20; // Versión actualizada
 
+contract AlienFlowSpaceDAO {
+    address public owner;
+    uint256 public memberCount;
+
+    constructor() {
+        owner = msg.sender;
+        memberCount = 1;
+    }
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Solo el owner puede ejecutar esto");
+        _;
+    }
+
+    function addMember() external onlyOwner {
+        memberCount++;
+    }
+}
