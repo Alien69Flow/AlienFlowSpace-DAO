@@ -2,7 +2,7 @@
 AlienFlowSpace DAO (BioFi, DeFi, DeSci, GameFi, IPFS, QFS, ReFi, RWA, SocialFi, TradFi)
 # AlienFlowSpace DAO  
 <div align="center">
-  <img src="https://github.com/Alien69Flow/AlienFlowSpace-DAO/blob/main/public/images/banner.jpg?raw=true" width="70%">
+  <img src="https://github.com/Alien69Flow/AlienFlowSpace-DAO/blob/main/public/images/banner.jpg?raw=true" width="60%">
 </div>
 
 <img src="public/images/logo.png" width="150" alt="Logo">
