@@ -1,11 +1,9 @@
-/* Variables de color */
 :root {
   --alien-green: #00af69;
   --alien-gold: #d4af37;
   --space-dark: #0a0a20;
 }
 
-/* Fuentes oficiales */
 body {
   font-family: 'Exo', sans-serif;
   background: var(--space-dark);
@@ -14,7 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Banner con efecto parallax */
 .parallax-banner {
   background: url('banner.jpg') center/cover fixed;
   height: 100vh;
@@ -26,13 +23,11 @@ body {
   opacity: 0.8;
 }
 
-/* Logo */
 .logo {
   height: 60px;
   margin: 20px;
 }
 
-/* Botón dorado con rebote */
 .btn-gold {
   background: var(--alien-gold);
   color: var(--space-dark);
@@ -51,11 +46,36 @@ body {
   to { transform: translateY(-10px); }
 }
 
-/* Texto Star Wars */
 .starwars-text {
   font-family: 'Atomic Age', cursive;
   color: var(--alien-gold);
   text-align: center;
   margin-top: 50vh;
   transform: perspective(300px) rotateX(20deg);
+}
+
+.alien-nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  background: rgba(0, 175, 105, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 15px 25px;
+  border-radius: 50px;
+  z-index: 100;
+}
+
+.nav-link {
+  color: var(--alien-gold);
+  font-family: 'Exo', sans-serif;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  transform: translateY(-5px);
+  text-shadow: 0 0 10px var(--alien-gold);
 }
